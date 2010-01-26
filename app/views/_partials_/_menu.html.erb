@@ -1,0 +1,31 @@
+<div class="menu">
+        	<ul>
+
+        	<li class="secao" style="margin-top:0;"><img alt="Seta2" src="/images/seta2.png" /> INSTITUCIONAL </li>
+          <li> <%= link_to "Nossa História", :controller => "institucional", :action => "nossa_historia" %> </li>
+
+          <li> <%= link_to "Conselho", :controller => "institucional", :action => "conselho" %> </li>
+        	<li> <%= link_to "Pastores", :controller => "institucional", :action => "pastores" %> </li>
+        	<li> <%= link_to "Congregações", :controller => "institucional", :action => "congregacoes" %> </li>
+        	<li> <%= link_to "Ministérios", :controller => "institucional", :action => "ministerios" %> </li>
+        	<li> <%= link_to "Missões", :controller => "institucional", :action => "missoes" %> </li>
+          <li> <%= link_to "Galeria de Pastores", :controller => "institucional", :action => "galeria_pastores" %></li>
+
+          <li class="secao"><img alt="Seta2" src="/images/seta2.png" /> INTERAÇÃO</li>
+          <li> <%= link_to "Rádio Online", {:controller => "player", :action => "index"}, :popup => ['Rádio de Primeira - www.ipinatal.com.br', 'height=245,width=400,title="Rádio Online - www.ipinatal.com.br"'] %> </li>
+          <li> <%= link_to "Ilustrações de Paz e Vida", :controller => "interacao", :action => "ilustracoes" %></li>
+          <li> <%= link_to "Pedido de Oração", {:controller => "interacao", :action => "pedido_oracao"}, :popup => ['Pedido de Oração - www.ipinatal.com.br', 'height=400,width=500,title="Pedido de Oração - www.ipinatal.com.br"'] %> </li>
+        	<li> <%= link_to "Plano de Leitura", :controller => "interacao", :action => "plano_leitura" %></li>
+        	<li> <%= link_to "Boletim Semanal", :controller => "interacao", :action => "boletim_semanal" %> </li>
+
+        	<li><a href="#">Galeria de Fotos</a></li>
+        	<li><a href="#">Agenda de Eventos</a></li>
+            
+            <li class="secao"><img alt="Seta2" src="/images/seta2.png" /> DIVERSOS</li>
+        	<li><a href="#">Fale Conosco</a></li>
+        	<li><a href="#">Links Recomendados</a></li>
+
+        	</ul>
+        </div>
+		
+<div class="programacao" style="margin-top:20px;"> <%= image_tag "programacao.jpg" %> </div>

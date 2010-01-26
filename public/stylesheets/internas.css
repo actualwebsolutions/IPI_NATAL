@@ -1,0 +1,31 @@
+#geral #conteudo #meio {line-height:150%;}
+#geral #conteudo #meio p {margin:20px 0;}
+
+#geral #conteudo #meio #barra-navegacao {overflow:hidden; background:#000; padding:2px 5px; color:#fff; font-size:18px; font-weight:bold;}
+#geral #conteudo #meio #barra-navegacao .navegacao {float:left;}
+#geral #conteudo #meio #barra-navegacao .tamanho-fonte {float:right; font-size:16px; font-weight:bold; margin-right:10px;}
+#geral #conteudo #meio #barra-navegacao .tamanho-fonte span {display:inline; margin-left:5px;}
+#geral #conteudo #meio #barra-navegacao .tamanho-fonte span a {color:#fff; text-decoration:none;}
+
+#geral #conteudo #meio #textos {padding:0 20px;} 
+
+#lista-conselho, #lista-pastores, #lista-congregacoes, #lista-missionarios, #lista-ministerios {margin-top:20px; overflow:hidden; line-height:180%;}
+#lista-conselho .item-conselho, #lista-pastores .item-pastores, #lista-congregacoes .item-congregacoes, #lista-missionarios .item-missionarios, #lista-ministerios .item-ministerios {border-bottom:1px solid #dfdfdf; padding-bottom:20px; margin-bottom:20px; overflow:hidden; font-size:16px;}
+#lista-conselho .item-conselho .foto, #lista-pastores .item-pastores .foto, #lista-congregacoes .item-congregacoes .foto, #lista-missionarios .item-missionarios .foto, #lista-ministerios .item-ministerios .foto {margin-left:20px; padding:5px; border:1px solid #ccc; float:left; margin-right:20px;}
+#lista-conselho .item-conselho .info, #lista-pastores .item-pastores .info, #lista-congregacoes .item-congregacoes .info, #lista-missionarios .item-missionarios .info, #lista-ministerios .item-ministerios .info {margin-top:0px; float:left;}
+#lista-conselho .item-conselho .info .nome, #lista-pastores .item-pastores .nome, #lista-congregacoes .item-congregacoes .nome, #lista-missionarios .item-missionarios .nome, #lista-ministerios .item-ministerios .nome {font-size:18px; color:#555; font-weight:bold;}
+#lista-conselho .item-conselho .info .email, #lista-pastores .item-pastores .email, #lista-congregacoes .item-congregacoes .email, #lista-missionarios .item-missionarios .email, #lista-ministerios .item-ministerios .email {color:blue;}
+#lista-conselho .item-conselho .info .email a, #lista-pastores .item-pastores .email a, #lista-congregacoes .item-congregacoes .email a, #lista-missionarios .item-missionarios .email a, #lista-ministerios .item-ministerios .email a {text-decoration:none;}
+#lista-conselho .item-conselho .info .telefone, #lista-pastores .item-pastores .telefone, #lista-congregacoes .item-congregacoes .telefone, #lista-missionarios .item-missionarios .telefone, #lista-ministerios .item-ministerios .telefone {font-size:14px;}
+
+.item-missionarios .info {width:70%;}
+.item-missionarios .info .historico {font-size:14px; text-align:justify;}
+
+.item-ministerios .nome .email {font-size:16px; font-weight:normal;}
+
+#textos h2 {border-bottom:1px solid #dfdfdf; padding-bottom:5px; margin-bottom:10px;}
+
+#lista-boletins, #lista-ilustracoes {overflow:hidden; height:400px; margin:20px 0;}
+#lista-boletins .item-boletim {float:left; font-size:14px; color:#AAA; border-bottom:1px solid #dfdfdf; padding-bottom:5px; margin:10px 50px 0 50px;}
+#lista-boletins .item-boletim a, #lista-ilustracoes .item-ilustracoes a {color:blue; text-decoration:none;}
+#lista-ilustracoes .item-ilustracoes {width:200px; float:left; font-size:14px; color:#AAA; border-bottom:1px solid #dfdfdf; padding-bottom:5px; margin:10px 25px 0px 0px}

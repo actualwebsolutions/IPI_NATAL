@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>1ª Igreja Presbiteriana Independente do Natal</title>
+<%= stylesheet_link_tag "principal" %>
+<%= stylesheet_link_tag "easyslider" %>
+<%= javascript_include_tag "jquery"%>
+<%= javascript_include_tag "easySlider"%>
+
+<script type="text/javascript">
+	$(document).ready(function(){	
+		$("#slider").easySlider({
+			auto: true, 
+			continuous: true,
+			numeric: true
+		});
+	});	
+</script>
+</head>
+<body>
+	<%= render :partial => '/_partials_/barra' %>
+		
+	<div id="geral">
+  	<%= render :partial => '/_partials_/topo' %>
+
+    <div id="conteudo">
+    	<div id="esquerda">
+      	<%= render :partial => '/_partials_/menu' %>
+      </div>
+      <div id="meio">
+          <div id="destaque-principal">
+              <div id="slider">
+                    <ul>				
+                        <li><%= image_tag "01.jpg"%></li>
+                        <li><%= image_tag "02.jpg"%></li>
+                        <li><%= image_tag "03.jpg"%></li>
+                        <li><%= image_tag "04.jpg"%></li>
+                        <li><%= image_tag "05.jpg"%></li>			
+                    </ul>
+                </div>
+          </div> <!-- #destaque-principal -->
+          
+          <div id="boxes-conteudo">
+          	<div class="box">
+            	<div class="titulo-box">Rádio Online</div>
+                <div class="imagem-box"><%=link_to image_tag ('radio.jpg'), { :controller => 'player', :action => 'index' }, :popup => ['Rádio de Primeira - www.ipinatal.com.br', 'height=245,width=400,title="Rádio de Primeira - www.ipinatal.com.br"']
+ %></div>
+            </div>
+            
+            <div class="box">
+            	<div class="titulo-box">Para você refletir</div>
+                <div class="imagem-box"><%= link_to image_tag ("ilustracoes.jpg"), :controller => 'interacao', :action => 'ilustracoes' %></div>
+          	</div>
+          	
+          	<div class="box">
+            	<div class="titulo-box">Receba nossos Boletins</div>
+              <div class="form">
+              	
+              	<% form_for @newsletter, :url => { :action => "create" }, :html => { :id => "new_newsletter" } do |f| %>
+              		<div class="validation-error">
+              			<% flash[:error] %>
+              			<%= f.error_messages :header_message => nil, :message => nil %>
+            			</div>
+              	  <p><%= f.label :nome, "Nome Completo:" %> <span class="requerido">*</span></p>
+              	  <p><%= f.text_field :nome %></p>
+              	  <p><%= f.label :email, "Email:" %> <span class="requerido">*</span></p>
+              	  <p><%= f.text_field :email %></p>
+              	  <p><%= f.submit "Cadastrar" %></p>
+              	<% end %>
+              </div>
+            </div>
+    
+          </div> <!-- #boxes-conteudo -->
+          
+          <div id="boxes-conteudo" style="margin-top:0;">
+          	<div class="box" style="width:460px;">
+            	<div class="titulo-box">Notícias do Mundo Gospel</div>
+            	<script src="http://feeds.feedburner.com/overbo?format=sigpro&displayExcerpts=false&displayDate=false" type="text/javascript" ></script>
+            </div>
+            
+            <div class="box">
+            	<div class="titulo-box">Mensagens em Podcasts</div>
+              <div id="lista-podcast">
+              	<div class="item-podcast">
+              		<a href="#"><div class="titulo-podcast"><span class="data-podcast">10/01/2010</span> - "Enquanto Isso..."</div>
+              		<div class="autor-podcast">Por Pr Jonatas Liasch - Mateus 17:1-19</div>
+              		<div class="player"><object height="24" width="220" id="audioplayer15" data="http://www.ipimaringa.org.br/player.swf" type="application/x-shockwave-flash"><param value="&amp;soundFile=http://www.ipimaringa.org.br/audio/15.mp3" name="FlashVars"/><param value="http://www.ipimaringa.org.br/player.swf" name="movie"/><param value="soundFile=http://www.ipimaringa.org.br/audio/15.mp3" name="FlashVars"/><param value="high" name="quality"/><param value="false" name="menu"/><param value="transparent" name="wmode"/></object></div></a>
+              	</div>
+              	
+              	<div class="item-podcast">
+              		<a href="#"><div class="titulo-podcast"><span class="data-podcast">03/01/2010</span> - " Ser santo e ser diferente, ser diferente e ser sabio"</div>
+              		<div class="autor-podcast">Por Pr. Oldrey Gabriel - Mateus 25: 1-13</div>
+              		<div class="player"><object height="24" width="220" id="audioplayer14" data="http://www.ipimaringa.org.br/player.swf" type="application/x-shockwave-flash"><param value="&amp;soundFile=http://www.ipimaringa.org.br/audio/14.mp3" name="FlashVars"/><param value="http://www.ipimaringa.org.br/player.swf" name="movie"/><param value="soundFile=http://www.ipimaringa.org.br/audio/14.mp3" name="FlashVars"/><param value="high" name="quality"/><param value="false" name="menu"/><param value="transparent" name="wmode"/></object></div></a>
+              	</div>
+              	
+              	<div class="item-podcast">
+              		<a href="#"><div class="titulo-podcast"><span class="data-podcast">31/12/2009</span> - "PONHA A CASA EM ORDEM"</div>
+              		<div class="autor-podcast">Por Pr. Marcelo Gomes - Isaias 38:1-8</div>
+              		<div class="player"><object height="24" width="220" id="audioplayer10" data="http://www.ipimaringa.org.br/player.swf" type="application/x-shockwave-flash"><param value="&amp;soundFile=http://www.ipimaringa.org.br/audio/10.mp3" name="FlashVars"/><param value="http://www.ipimaringa.org.br/player.swf" name="movie"/><param value="soundFile=http://www.ipimaringa.org.br/audio/10.mp3" name="FlashVars"/><param value="high" name="quality"/><param value="false" name="menu"/><param value="transparent" name="wmode"/></object></div></a>
+              	</div>
+              	
+              </div>
+              <div class="link-mensagem"> <a href="#">&raquo; Ver todos os podcasts.</a></div>
+            </div>
+            
+          </div>
+      
+      </div> <!-- #meio -->
+    </div> <!-- #conteudo -->
+  </div> <!-- #geral -->
+  
+  <%= render :partial => '/_partials_/rodape' %>
+  
+</body>
+</html>

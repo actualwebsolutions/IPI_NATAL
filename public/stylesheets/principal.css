@@ -1,0 +1,68 @@
+* {margin:0; padding:0;}
+img {border:none; vertical-align:middle;}
+body {background: #336688; font-size:14px; font-family: Calibri, 'Trebuchet Ms', Verdana; color:#474747;}
+
+#barra .texto {text-align:center; padding:0 15px; color:#666; font-weight:bold;}
+
+#barra-radio, #barra {width:950px; padding-top:5px; height:25px; border-bottom:2px solid #CCC; overflow:hidden; margin:0 auto; background:#DFE5E9 url(../images/bg-barra-radio.jpg) left center repeat-x;}
+#barra-radio img {vertical-align:middle;}
+#barra-radio .logomarca-radio {margin-left:20px; float:left;}
+#barra-radio .tocando-radio {float:left; margin-left:35px; font-size:12px; color:#666;}
+#barra-radio .tocando-radio span {font-weight:bold; color:#555; font-size:14px;}
+#barra-radio .players-radio {float:right; margin-right:20px;}
+
+#geral {width:920px; margin:0 auto; padding:0 15px; background:#fff; min-height:500px;}
+#geral #topo {height:140px; border-bottom:1px solid #DFDFDF; overflow:hidden; padding-top:15px;}
+#geral #topo .logomarca {float:left;}
+#geral #topo .menu-banner {float:right; text-align:right;}
+#geral #topo .menu-banner .menu-cima {margin-bottom:10px; font-size:12px;}
+#geral #topo .menu-banner .menu-cima img {vertical-align:text-bottom; margin-right:5px;}
+#geral #topo .menu-banner .menu-cima ul {list-style:none;}
+#geral #topo .menu-banner .menu-cima ul li {display:inline; margin-left:5px;}
+#geral #topo .menu-banner .menu-cima ul li a {color:#000; text-decoration:none;}
+#geral #conteudo {margin-top:20px; overflow:hidden;}
+#geral #conteudo #esquerda {width:160px; float:left;}
+#geral #conteudo #esquerda .menu ul {list-style:none;}
+#geral #conteudo #esquerda .menu ul li {padding-left:8px; margin-bottom:5px; font-size:15px;}
+#geral #conteudo #esquerda .menu ul li a {color:#000; text-decoration:none;}
+#geral #conteudo #esquerda .menu ul li.secao {font-weight:bold; font-size:17px; background:#000 ; color:#fff; padding-left:0; margin-bottom:5px; margin-top:7px; vertical-align:middle; padding:3px 5px;}
+/* #geral #conteudo #esquerda .menu ul li.secao a {color:#0093DD; text-decoration:none;}
+#geral #conteudo #esquerda .menu ul li.secao a:hover {border-left:3px solid #0093DD; padding-left:5px;} */
+#geral #conteudo #meio {width:730px; padding-left:20px; background:url(../images/bg-menu.jpg) left top repeat-y; float:right; min-height:500px; line-height:130%;}
+#geral #conteudo #meio #destaque-principal {width:730px; height:160px; overflow:hidden; position:relative; background:silver;}
+
+#geral #conteudo #meio #boxes-conteudo {width:730px; overflow:hidden; margin-top:20px;}
+#geral #conteudo #meio #boxes-conteudo .box {width:221px; padding:10px; float:left; margin-left:3px;}
+#geral #conteudo #meio #boxes-conteudo .box:first-child {margin:0; }
+#geral #conteudo #meio #boxes-conteudo .box .titulo-box {font-size:20px; padding-bottom:8px; margin-bottom:10px; border-bottom:1px solid #dfdfdf;}
+#geral #conteudo #meio #boxes-conteudo .box .imagem-box {margin:10px 0;}
+#geral #conteudo #meio #boxes-conteudo .box .titulo-mensagem {font-size:16px; color:#0093DD;}
+#geral #conteudo #meio #boxes-conteudo .box .legenda-mensagem {font-size:14px; color:#aaa;}
+#geral #conteudo #meio #boxes-conteudo .box .texto-mensagem {font-size:12px; margin-top:10px; text-align:justify;}
+#geral #conteudo #meio #boxes-conteudo .box .link-mensagem {font-size:12px; margin-top:10px; color:#0093DD;}
+#geral #conteudo #meio #boxes-conteudo .box .link-mensagem a {color:#0093DD; text-decoration:none;}
+
+#geral #conteudo #meio #boxes-conteudo .box .item-eventos {margin-bottom:10px; padding-bottom:5px; border-bottom:1px dashed #dfdfdf; font-size:14px; }
+#geral #conteudo #meio #boxes-conteudo .box .item-eventos a {color:#474747; text-decoration:none;}
+#geral #conteudo #meio #boxes-conteudo .box .item-eventos .data-evento {color:#aaa; font-size:12px; }
+
+#geral #conteudo #meio #boxes-conteudo .box .item-podcast{margin-bottom:10px; padding-bottom:5px; border-bottom:1px dashed #dfdfdf; font-size:12px; }
+#geral #conteudo #meio #boxes-conteudo .box .item-podcast a {color:#474747; text-decoration:none;}
+#geral #conteudo #meio #boxes-conteudo .box .item-podcast .data-podcast, .autor-podcast {color:#999; }
+#geral #conteudo #meio #boxes-conteudo .box .item-podcast .player {margin:5px 0;}
+
+#rodape {width:920px; margin:0 auto; padding:15px; overflow:hidden; padding-bottom:20px; color:#FFF; }
+#rodape .copyright {text-align:center; font-size:14px;}
+#rodape .assinatura {float:right; font-size:12px; text-align:right;}
+
+form#new_newsletter {margin-top:10px;}
+form#new_newsletter label {color:#666; font-weight:bold; font-size:14px;}
+form#new_newsletter input[type="text"], form input[type="password"] {margin:5px 0; padding:2px; border:1px solid #dfdfdf; width:215px;}
+form#new_newsletter input[type="submit"] {margin-top:5px; float:right;}
+form#new_newsletter select {margin:5px 0; padding:2px; border:1px solid #dfdfdf; width:130px;}
+form#new_newsletter textarea {margin:5px 0; padding:2px; border:1px solid #dfdfdf; width:500px; height:200px;}
+form#new_newsletter .requerido {font-size:16px; font-weight:bold; color:red;}
+.validation-error {color:red; font-weight:bold; margin-bottom:10px;}
+.validation-error ul {list-style:none; text-align:center;}
+.fieldWithErrors {margin:0; padding:0; display:inline;}
+.feedTitle, .fbsubscribelink, #creditfooter {display:none;}

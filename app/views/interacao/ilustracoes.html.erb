@@ -1,0 +1,13 @@
+<div id="textos">
+	
+<p>Donec convallis congue porttitor. Suspendisse porttitor tellus at sem tristique bibendum. Cras quis diam velit, nec adipiscing libero. Nunc gravida molestie suscipit. Quisque eu elementum odio. Ut dolor risus, pretium et euismod rutrum, convallis at nisi. Nunc interdum odio sit amet odio mollis ut rutrum lectus sodales. Nulla condimentum purus interdum lacus porttitor venenatis sed et est. Donec vulputate lacus non sem cursus iaculis. In vitae semper felis.</p>
+
+	<div id="lista-ilustracoes">
+		<% @ilustracoes.each do |i| %>
+			<div class="item-ilustracoes">
+				<%= link_to image_tag ("icon-mp3.png") + "&nbsp;&nbsp;" + i.titulo, {:controller => "player", :action => "ilustracoes", :id => i.id}, :popup => ['Rádio de Primeira - www.ipinatal.com.br', 'height=245,width=400,title="Rádio Online - www.ipinatal.com.br"'] %>
+			</div>
+		<% end %>
+	</div>
+
+</div>

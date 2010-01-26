@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> <%= @titulo %> - 1ª Igreja Presbiteriana Independente do Natal</title>
+<%= stylesheet_link_tag "principal" %>
+<%= stylesheet_link_tag "internas" %>
+<%= javascript_include_tag "jquery" %>
+<%= javascript_include_tag "aumentar-fonte" %>
+</head>
+<body>
+	<%= render :partial => '/_partials_/barra' %>
+	<div id="geral">
+  	<%= render :partial => '/_partials_/topo' %>
+
+    <div id="conteudo">
+    	<div id="esquerda">
+      	<%= render :partial => '/_partials_/menu' %>
+      </div>
+      <div id="meio">
+      	<div id="barra-navegacao">
+					<div class="navegacao">
+						<%= image_tag "seta2.png" %> INTERAÇÃO / <%= @titulo %>
+					</div>
+					
+					<div class="tamanho-fonte">
+						<span id="aumentar_fonte"><a href="javascript:void()">A+</a></span> <span><a id="diminuir_fonte" href="javascript:void()">A-</a></span>
+					</div>
+					
+				</div>
+
+      	
+      	<%= yield %>
+      </div> <!-- #meio -->
+    </div> <!-- #conteudo -->
+  </div> <!-- #geral -->
+  
+  <%= render :partial => '/_partials_/rodape' %>
+
+  
+  <script language="javascript" type="text/javascript" src="http://server1.bouncestream.com.br/system/streaminfo.js"></script>
+<script language="javascript" type="text/javascript" src="http://server1.bouncestream.com.br/js.php/allysson/streaminfo/rnd0"></script>
+  
+</body>
+</html>

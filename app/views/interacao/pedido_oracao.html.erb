@@ -1,0 +1,33 @@
+﻿<style>
+	* {margin:0; padding:0;}
+	body {background:url(../images/banner-pedido-oracao.jpg) no-repeat;}
+	#geral {width:500px; height:400px; overflow:hidden; position:absolute;}
+	#formulario {top:120px; left:50px; position:relative;}
+	form#pedido_oracao {width:400px;}
+	form#pedido_oracao label {color:#666; font-weight:bold; font-size:14px;}
+	form#pedido_oracao input[type="text"], form input[type="password"] {margin:5px 0; padding:2px; border:1px solid #dfdfdf; width:400px;}
+	form#pedido_oracao input[type="submit"] {margin-top:5px; float:right;}
+	form#pedido_oracao textarea {margin:5px 0; padding:2px; border:1px solid #dfdfdf; width:400px; height:60px;}
+	form#pedido_oracao .requerido {font-size:16px; font-weight:bold; color:red;}
+	.validation-error {color:red; font-weight:bold; margin-bottom:10px; text-align:center; font-size:12px;}
+	.validation-error ul {list-style:none; text-align:center;}
+	.fieldWithErrors {margin:0; padding:0; display:inline;}
+</style>
+<div id="geral">
+	
+<div id="formulario">
+	<% form_for @pedido, :url => { :action => "cadastrar_pedido_oracao" }, :html => {:id => "pedido_oracao"} do |f| %>
+		<div class="validation-error">
+			<%= flash[:error] %>
+		</div>
+		<p><%= f.label :nome, "Nome Completo:" %> <span class="requerido">*</span></p>
+	  <p><%= f.text_field :nome %></p>
+	  <p><%= f.label :email, "Email:" %> <span class="requerido">*</span></p>
+	  <p><%= f.text_field :email %></p>
+	  <p><%= f.label :pedido, "Pedido:" %> <span class="requerido">*</span></p>
+	  <p><%= f.text_area :pedido %></p>
+	  <p><%= f.submit "Cadastrar" %></p>	  
+	<% end -%>
+</div>
+
+</div>

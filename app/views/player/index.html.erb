@@ -1,0 +1,21 @@
+﻿<style>
+	* {margin:0; padding:0;}
+	.player-radio {height:80px; overflow:hidden;}
+	embed, object {width:400px; height:45px;}
+</style>
+<div id="player">
+	<div class="banner"><%= image_tag "banner-player.jpg" %></div>
+	<div class="player-radio">
+			<object id="WMPlay" classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95" codebase="http://activex.microsoft.com/activex/%20%20%20controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" standby="Carregando Gospel FM" type="application/x-oleobject" viewastext="viewastext">
+  <param name="FileName" value="http://server1.bouncestream.com.br/tunein.php/allysson/playlist.asx">
+  <param name="AutoStart" value="True">
+  <param name="TransparentAtStart" value="True">
+  <param name="ShowControls" value="0">
+  <param name="ShowDisplay" value="none">
+  <param name="ShowStatusBar" value="none">
+  <param name="AutoSize" value="none">
+  <param name="AnimationAtStart" value="true">
+  <embed src="http://server1.bouncestream.com.br/tunein.php/allysson/playlist.asx" autostart="True" type="application/x-mplayer2" id="WMPlay" transparentatstart="True" showcontrols="none" showdisplay="none" showstatusbar="none" animationatstart="true" filename="http://server1.bouncestream.com.br/tunein.php/allysson/playlist.asx" autosize="0"> 
+</object>
+		</div>
+</div>
